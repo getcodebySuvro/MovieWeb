@@ -1,0 +1,163 @@
+.ticketcontainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left:  auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.601);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0px 0px 20px rgb(245, 245, 245);
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1px;
+    transition: 0.3s;
+}
+
+@media (max-width:912px) {
+    .ticketcontainer{
+        width: 80%;
+        margin-top: 200px;
+        margin-bottom: 380px;
+    }
+}
+.flex{
+    display: flex;
+}
+
+
+
+.seat{
+    background-color: rgb(201, 201, 201);
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5px;
+}
+.selected{
+    background-color: rgb(149, 0, 255);
+}
+.occupied{
+    background-color: white ;
+}
+
+
+.row{
+    display: flex;
+}
+
+.movieContainer{
+    margin: 20px 0px 10px 0px;
+}
+.movieContainer > select{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.seat:nth-child(3){
+    margin-left: 15px;
+}
+.seat:nth-last-child(2){
+    margin-left: 15px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.showcase{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    width: 300px;
+    padding-right: 60px;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.screen{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 3px ;
+    transform:rotateX(-45deg);
+    box-shadow: 0px 3px 10px white;
+}
+.screenContainer{
+    perspective: 1000px;
+}
+
+p > span{
+    color: rgb(149, 0, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+.bookbutton{
+    background-color: white;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+    color: rgb(149, 0, 255);
+
+}
+.bookbutton:hover{
+    background-color: rgb(149, 0, 255);
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px black;
+}
+
+.choosemovie{
+    background-color: white;
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+    color: rgb(24, 0, 62);
+    margin-top: 15px;
+}
+
+.choosemovie:hover{
+    background-color: rgb(24, 0, 62);
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px black;
+}
+
+.moviename{
+    color: rgb(149, 0, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.text{
+    font-size: 18px;
+}

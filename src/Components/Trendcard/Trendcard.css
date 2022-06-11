@@ -1,0 +1,124 @@
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 330px;
+    margin: 10px;
+    padding: 10px 7px ;
+    background-color: rgba(11, 0, 127, 0.615);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0px 0px 20px whitesmoke;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+@media (max-width: 550px ) {
+    .card{
+        transform: scale(1.7);
+        margin-top: 130px;
+        margin-bottom: 140px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aquamarine;
+}
+
+}
+.fav{
+    position: absolute;
+    top: -13px;
+    
+    
+}
+.red{
+    color: red;
+}
+.gray{
+    color: rgb(186, 186, 186);
+}
+.card:hover{
+    color: black;
+    box-shadow: inset 0px 0px 50px white
+}
+
+
+
+.card  > img{
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.cardtitle{
+    text-transform: uppercase;
+    margin: 5px;
+    font-size: 14px;
+
+}
+.carddate{
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.overview{
+    height: 230px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    transform: translateY(-8%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.584);
+    box-shadow: inset 0px 0px 10px whitesmoke;
+    color: black;
+    z-index: 100;
+    border: none;
+    border-radius: 15px;
+    display: none;
+    padding: 10px;
+    margin: 0px;
+    overflow-y: scroll;
+}
+.card:hover .overview{
+    display: flex;
+}
+
+.card:hover .carddate{
+    display: none;
+}
+.card:hover .cardtitle{
+    display: none;
+}
+.card:hover  img{
+
+height: 100px;
+margin-bottom: 0px;
+margin-top: 0px;
+
+}
+
+.card:hover fav{
+    position: fixed;
+}
+
+.nooverview{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 15px;
+}
